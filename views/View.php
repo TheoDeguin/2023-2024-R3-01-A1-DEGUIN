@@ -1,5 +1,7 @@
 <?php
-private string $fichier;
+
+class View{
+  private string $fichier;
 private string $titre;
 
 public function __construct(string $action) {
@@ -36,5 +38,7 @@ private function genererFichier(string $fichier, array $donnees) {
     else {
       throw new Exception("Fichier '$fichier' introuvable");
     }
+}
+
 }
 ?>
