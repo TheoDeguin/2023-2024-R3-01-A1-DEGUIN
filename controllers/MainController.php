@@ -4,13 +4,18 @@ require_once('models/PokemonManager.php');
 
 class MainController{
     public function Index() : void {
-        $poke = new PokemonManager();
-        $pokemon = $poke->getbyid(1);
-        var_dump($pokemon);
+        $pokeManager = new PokemonManager();
+        $allPokemon = $pokeManager->getAll();
+        $existingPokemon = $pokeManager->getByID(1);
+        $nonExistingPokemon = $pokeManager->getByID(999);
+
         $indexView = new View('Index');
-        $indexView->generer(
-            ['nomDresseur' => "Red",]
-        );
+        $indexView->generer([
+            'allPokemon' => $allPokemon,
+            'existingPokemon' => $existingPokemon,
+            'nonExistingPokemon' => $nonExistingPokemon,
+            'nomDresseur' => "Red", // Existing data
+        ]);
     }
 }
 ?>
