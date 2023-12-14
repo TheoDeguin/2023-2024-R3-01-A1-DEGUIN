@@ -9,12 +9,12 @@ class Pokemon{
 
     // Constructeur de la classe Pokemon
     public function __construct(?int $idPokemon, string $nomEspece, ?string $description, string $typeOne, ?string $typeTwo, ?string $urlImg){
-        $this->$idPokemon = $idPokemon;
-        $this->$nomEspece = $nomEspece;
-        $this->$description = $description;
-        $this->$typeOne = $typeOne;
-        $this->$typeTwo = $typeTwo;
-        $this->$urlImg = $urlImg;
+        $this->idPokemon = $idPokemon;
+        $this->nomEspece = $nomEspece;
+        $this->description = $description;
+        $this->typeOne = $typeOne;
+        $this->typeTwo = $typeTwo;
+        $this->urlImg = $urlImg;
     }
 
     // Getter pour $idPokemon
