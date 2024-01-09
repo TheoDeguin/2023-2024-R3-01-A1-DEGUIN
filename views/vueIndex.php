@@ -1,3 +1,4 @@
+<h1>Pokédex de <?= $nomDresseur ?></h1>
 <table>
     <tr>
         <td>ID</td>
