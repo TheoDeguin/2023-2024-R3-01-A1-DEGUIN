@@ -1,14 +1,3 @@
-<h1>Pokédex de <?= $nomDresseur ?></h1>
-
-<h2>All Pokémon:</h2>
-<?php var_dump($allPokemon); ?>
-
-<h2>Pokémon by Existing ID:</h2>
-<?php var_dump($existingPokemon); ?>
-
-<h2>Pokémon by Non-Existing ID:</h2>
-<?php var_dump($nonExistingPokemon); ?>
-
 <table>
     <tr>
         <td>ID</td>
@@ -26,6 +15,7 @@
                 <td>$pokemon[description]</td>
                 <td>$pokemon[typeOne] $pokemon[typeTwo]</td>
                 <td><img src=$pokemon[urlImg] alt=$pokemon[nomEspece]></td>
+                <td><button type=\"button\" href=\"index.php?action=edit-pokemon&idPokemon=$pokemon[idPokemon]\">Modifier</button> <button type=\"button\" href=\"index.php?action=del-pokemon&idPokemon=$pokemon[idPokemon]\">Supprimer</button></td>
             </tr>
         ");
     }
