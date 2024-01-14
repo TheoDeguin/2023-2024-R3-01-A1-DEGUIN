@@ -13,9 +13,9 @@
     <!-- Menu -->
     <nav>
         <a href="index.php">Index</a>
-        <a href="index.php?action=add-pokemon"></a>
-        <a href="index.php?action=add-pokemon-type"></a>
-        <a href="index.php?action=search"></a>
+        <a href="index.php?action=add-pokemon">Add Pokemon</a>
+        <a href="index.php?action=add-type-pokemon">Add Type</a>
+        <a href="index.php?action=search">Search</a>
     </nav>
 </header>
 <!-- #contenu -->

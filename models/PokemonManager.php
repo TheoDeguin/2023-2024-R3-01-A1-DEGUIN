@@ -29,5 +29,14 @@ class PokemonManager extends Model{
             return null;
         }
     }
+
+    public function deletePokemon(int $idPokemon):int
+    {
+        $request = "DELETE FROM pokemon WHERE idPokemon = :id";
+        $params = [':id' => $idPokemon];
+        $resultat = $this->execRequest($request,$params);
+
+        return $resultat->rowCount();
+    }
 }
 ?>

@@ -6,9 +6,9 @@
         {
             "label": "Start Edge + Fichier Courant",
             "type": "shell",
-            "command": "MicrosoftEdge",
+            "command": "C:/Program Files/Mozilla Firefox/firefox.exe",
             "args": [
-                "http://localhost/2023-2024-R3-01-A1-DEGUIN/2023-2024-R3-01-A1-DEGUIN/index.php"
+                "http://localhost/2023-2024-R3-01-A1-DEGUIN/index.php"
             ],
             "group": {
                 "kind": "build",

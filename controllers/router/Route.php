@@ -1,5 +1,9 @@
 <?php
 abstract class Route {
+    public function __construct(){
+        
+    }
+
     public function action($params = [], $method = 'GET') {
         if ($method === 'GET') $this->get($params);
         else $this->post($params);

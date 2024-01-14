@@ -2,7 +2,7 @@
 require_once("controllers/router/Route.php");
 require_once("controllers/MainController.php");
 
-class RouteIndex extends Route {
+class RouteSearch extends Route{
     private MainController $controller;
 
     public function __construct(MainController $controller) {
@@ -11,7 +11,7 @@ class RouteIndex extends Route {
     }
 
     public function get($params = []) {
-        return $this->controller->Index();
+        return $this->controller->displaySearch();
     }
 
     public function post($params = []) {

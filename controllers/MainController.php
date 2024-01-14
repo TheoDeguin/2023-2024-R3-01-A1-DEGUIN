@@ -14,8 +14,13 @@ class MainController{
             'allPokemon' => $allPokemon,
             'existingPokemon' => $existingPokemon,
             'nonExistingPokemon' => $nonExistingPokemon,
-            'nomDresseur' => "Red", // Existing data
+            'nomDresseur' => "Red",
         ]);
+    }
+
+    public function displaySearch() : void{
+        $searchView = new View('Search');
+        $searchView->generer([]);
     }
 }
 ?>
