@@ -1,12 +1,12 @@
 <h1><?= isset($editPokemon) ? "Édition d'un Pokemon" : "Ajout d'un Pokemon" ?></h1>
 <div>
-    <form action="index.php?action=<?= isset($editPokemon) ? 'edit-pokemon' : 'add-pokemon' ?>" method="post">
+    <form action="index.php?action=add-pokemon" method="post">
 
         <label for="nomEspece">Nom du Pokemon :</label>
         <input type="text" name="nomEspece" id="nomEspece" required value="<?= isset($editPokemon) ? htmlspecialchars($editPokemon->getNomEspece()) : '' ?>">
 
         <label for="description">Description :</label>
-        <textarea name="description" id="description" rows="4" required><?= isset($editPokemon) ? htmlspecialchars($editPokemon->getDescription()) : '' ?></textarea>
+        <textarea name="description" id="description" rows="1" required><?= isset($editPokemon) ? htmlspecialchars($editPokemon->getDescription()) : '' ?></textarea>
 
         <label for="typeOne">Type n°1 :</label>
         <input type="text" name="typeOne" id="typeOne" required value="<?= isset($editPokemon) ? htmlspecialchars($editPokemon->getTypeOne()) : '' ?>">

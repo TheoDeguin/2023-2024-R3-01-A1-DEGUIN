@@ -3,7 +3,7 @@ require_once('controllers/MainController.php');
 require_once('views/View.php');
 require_once('models/PokemonManager.php');
 
-class PokemonController extends MainController{
+class PokemonController{
     public function displayAddPokemon(?string $message = null) : void{
         $addPokemonView = new View('AddPokemon');
         $addPokemonView->generer(["message" => $message]);

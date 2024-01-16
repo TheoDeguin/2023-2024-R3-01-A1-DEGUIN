@@ -1,0 +1,63 @@
+/* Styles Généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Styles pour les Tableaux */
+table {
+    width: calc(100% - 40px); /* Calcule la largeur en soustrayant le padding */
+    margin: 20px auto; /* Centre le tableau et ajoute un espace au-dessus et en dessous */
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
